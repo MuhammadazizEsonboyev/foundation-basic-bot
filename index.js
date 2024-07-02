@@ -6,6 +6,7 @@ const bot = new TelegramBot(token, { polling: true });
 
 bot.onText(/\/start/, (msg) => {
     const id = msg.chat.id;
+    //Salom
     bot.sendMessage(id, "Salom " + msg.from.first_name + " bizning botimizga xush kelibsan!");
 });
 
